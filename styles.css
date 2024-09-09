@@ -1,4 +1,73 @@
 @font-face {
-    font-family: empire-text;
+    font-family: star-text;
     src: url("./assets/Starjedi.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 0 16vw;
+
+    display: flex;
+
+    /* Maybe include this to wrap if window small. Check with all content */
+     /* flex-wrap: wrap; */
+}
+
+#leftSide {
+    position: relative;
+    display: flex;
+}
+
+#attribute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    color: white;
+    padding: 10px;
+    background: rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+}
+
+#logoContainer {
+    position: absolute;
+    background: rgba(0,0,0,0.35);
+    color: #222222;
+    font-size: 16px;
+    font-family: star-text;
+
+    padding: 10px;
+    width: 100%;
+    top: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    filter: invert(10%) hue-rotate(109deg) brightness(96%) contrast(90%);
+}
+
+#signUpArea {
+    background-color: #F7F7F7;
+    min-width: 300px;
+    flex: 1;
 }
