@@ -125,3 +125,17 @@ form #account {
     margin-top: 0px;
     margin-left: 32px;
 }
+
+input {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input:invalid {
+    border: 2px dashed #dd0000;
+}
+
+input:focus {
+    border: 2px solid #0000aa;
+    box-shadow: 1px 1px 5px 1px;
+}
