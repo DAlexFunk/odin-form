@@ -9,6 +9,7 @@
 
 body {
     background-color: #222222;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0 16vw;
 
@@ -32,6 +33,7 @@ body {
     padding: 10px;
     background: rgba(0,0,0,0.35);
     text-align: center;
+    font-size: 10px;
 }
 
 a {
@@ -47,7 +49,7 @@ img {
     position: absolute;
     background: rgba(0,0,0,0.35);
     color: #222222;
-    font-size: 16px;
+    font-size: 48px;
     font-family: star-text;
 
     padding: 10px;
@@ -55,9 +57,9 @@ img {
     top: 150px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 10px;
 }
 
 #logo {
@@ -69,5 +71,57 @@ img {
 #signUpArea {
     background-color: #F7F7F7;
     min-width: 300px;
+    padding-top: 64px;
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#signUpArea #actionText {
+    font-size: 24px;
+    margin-left: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 16px;
+    padding: 16px;
+    border: 0;
+    box-shadow: 2px 2px 5px;
+}
+
+form .row {
+    display: flex;
+    gap: 20%;
+}
+
+form .formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    width: 150px;
+    
+    margin-left: 32px;
+    padding: 8px;
+    border-radius: 6px;
+
+    background-color: #222222;
+    color: #F7F7F7;
+}
+
+form #account {
+    margin-top: 0px;
+    margin-left: 32px;
 }

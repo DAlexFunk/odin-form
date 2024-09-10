@@ -11,14 +11,59 @@
         <img src="./assets/background.jpg" alt="Storm Trooper Standing off to the side">
         <div id="logoContainer">
             <img src="./assets/Emblem_of_the_First_Galactic_Empire.svg" alt="Logo for the First Galatic Empire" id="logo">
-            <span id="joinText">Join the empire today!</span>
+            <span id="joinText">Empire</span>
         </div>
         <div id="attribute">Photo by <a href="https://unsplash.com/@ciprian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ciprian Boiciuc</a>
              on <a href="https://unsplash.com/photos/star-wars-stormtrooper-lego-mini-fig-TrNSWatUW5g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </div>
     </div>
 
-    <div id="signUpArea">Sign Up</div>
+    <div id="signUpArea">
+        <p id="actionText">The Galatic Empire needs you! In order to maintain peace and justice in the galaxy, we rely on people just like you. Sign-up for a position in the Galatic Empire today!</p>
+        <form action="index.html">
+            <fieldset>
+                <p>Let's Fight the Rebellion!</p>
+
+                <div class="row">
+                    <div class="formInput">
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName" placeholder="James">
+                    </div>
+                    <div class="formInput">
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="firstName" placeholder="Jones">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="formInput">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="darthvader@empire.com">
+                    </div>
+                    
+                    <div class="formInput">
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" placeholder="(888)-133-3777">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="formInput">
+                        <label for="pass">Password: </label>
+                        <input type="password" id="pass" name="pass">
+                    </div>
+                    
+                    <div class="formInput">
+                        <label for="confirmPass">Confirm Password: </label>
+                        <input type="password" id="confirmPass" name="confirmPass">
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+            <p id="account">Already have an account? <a href="index.html">Log In</a></p>
+        </form>
+    </div>
 </body>
 </html>
 
