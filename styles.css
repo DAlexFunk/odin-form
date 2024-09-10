@@ -14,9 +14,6 @@ body {
     padding: 0 16vw;
 
     display: flex;
-
-    /* Maybe include this to wrap if window small. Check with all content */
-     /* flex-wrap: wrap; */
 }
 
 #leftSide {
